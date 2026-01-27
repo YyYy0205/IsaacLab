@@ -38,6 +38,7 @@ class G1Rewards(RewardsCfg):
             "threshold": 0.4,
         },
     )
+    # 腿部滑动 不要拖着走
     feet_slide = RewTerm(
         func=mdp.feet_slide,
         weight=-0.1,
@@ -53,7 +54,8 @@ class G1Rewards(RewardsCfg):
         weight=-1.0,
         params={"asset_cfg": SceneEntityCfg("robot", joint_names=[".*_ankle_pitch_joint", ".*_ankle_roll_joint"])},
     )
-    # Penalize deviation from default of the joints that are not essential for locomotion
+    # Penalize deviation from default of the joints that are not essential for locomotion 
+    # 惩罚 移动时 不必要的关节
     joint_deviation_hip = RewTerm(
         func=mdp.joint_deviation_l1,
         weight=-0.1,
@@ -113,7 +115,7 @@ class G1RoughEnvCfg(LocomotionVelocityRoughEnvCfg):
 
         # Randomization
         self.events.push_robot = None
-        self.events.add_base_mass = None
+        self.events.add_base_mass = None 
         self.events.reset_robot_joints.params["position_range"] = (1.0, 1.0)
         self.events.base_external_force_torque.params["asset_cfg"].body_names = ["torso_link"]
         self.events.reset_base.params = {
@@ -152,6 +154,7 @@ class G1RoughEnvCfg(LocomotionVelocityRoughEnvCfg):
         self.terminations.base_contact.params["sensor_cfg"].body_names = "torso_link"
 
 
+# 对训练完的模型进行验证（play）
 @configclass
 class G1RoughEnvCfg_PLAY(G1RoughEnvCfg):
     def __post_init__(self):
@@ -168,7 +171,7 @@ class G1RoughEnvCfg_PLAY(G1RoughEnvCfg):
         if self.scene.terrain.terrain_generator is not None:
             self.scene.terrain.terrain_generator.num_rows = 5
             self.scene.terrain.terrain_generator.num_cols = 5
-            self.scene.terrain.terrain_generator.curriculum = False
+            self.scene.terrain.terrain_generator.curriculum = False # 
 
         self.commands.base_velocity.ranges.lin_vel_x = (1.0, 1.0)
         self.commands.base_velocity.ranges.lin_vel_y = (0.0, 0.0)
