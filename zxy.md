@@ -41,3 +41,10 @@
 
 
 - ** 1.28 **
+  1. 机器人模型格式
+   > [Isaac中文教程](https://www.bilibili.com/video/BV1SK4CzHEnb?spm_id_from=333.788.videopod.sections&vd_source=527df480cd41c3e25ef0e62a90dca33a) 1.4.1
+导入unitree G1机器人urdf
+   > [宇树机器人模型](https://github.com/unitreerobotics/unitree_ros)
+    <img width="1340" height="785" alt="unitree g1urdf" src="https://github.com/user-attachments/assets/57300d88-391a-4d9f-b3f5-4c67d68369fd" />
+  命令`python scripts/tools/convert_urdf.py /home/yons/isaac_study/unitree_ros-master/robots/g1_description/g1_23dof.urdf /home/yons/isaac_study/unitree_ros-master/robots/g1_description/g1_23dof.usd`
+   > <img width="1431" height="604" alt="截图 2026-01-28 16-06-51" src="https://github.com/user-attachments/assets/eebfcd4f-3fa8-4205-b6f5-50ab91b7db53" />
