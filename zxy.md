@@ -8,7 +8,9 @@
 
   
   2. 训练： `scripts/reinforcement_learning/rsl_rl/train.py --task Isaac-Velocity-Rough-G1_v0 --num_envs 2000 --headless --max_iterations 1000`
-    ```
+ [Isaac中文教程](https://www.bilibili.com/video/BV1SK4CzHEnb?spm_id_from=333.788.videopod.sections&vd_source=527df480cd41c3e25ef0e62a90dca33a) 1.3.1/1.3.2
+
+```
     * scripts/reinforcement_learning/rsl_rl/train.py
     这是训练脚本的路径，位于你的项目目录中。
     表明你正在使用 rsl_rl 这个强化学习库（Robotic Systems Lab RL，常用于Isaac Sim的研究项目）。
@@ -31,9 +33,8 @@
     ```
     * --checkpoint_interval	 
     --checkpoint_interval 500	每多少步保存一次模型
-
+```
   3.  验证：`scripts/reinforcement_learning/rsl_rl/play.py --task Isaac-Velocity-Rough-G1_v0 --load_run 2026-01-27_16-46-23 `
- [Isaac中文教程](https://www.bilibili.com/video/BV1SK4CzHEnb?spm_id_from=333.788.videopod.sections&vd_source=527df480cd41c3e25ef0e62a90dca33a) 1.3.1/1.3.2
 <img width="1447" height="937" alt="截图 2026-01-27 17-59-50" src="https://github.com/user-attachments/assets/fdea2bba-54e9-41a4-abf1-ae33ca771945" />
 
 
