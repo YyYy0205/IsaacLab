@@ -38,7 +38,7 @@
  > [Isaac中文教程](https://www.bilibili.com/video/BV1SK4CzHEnb?spm_id_from=333.788.videopod.sections&vd_source=527df480cd41c3e25ef0e62a90dca33a) 1.3.1/1.3.2
 
 ### 1.28 
-  1. 机器人模型格式
+ 1. 机器人模型格式
    > [Isaac中文教程](https://www.bilibili.com/video/BV1SK4CzHEnb?spm_id_from=333.788.videopod.sections&vd_source=527df480cd41c3e25ef0e62a90dca33a) 1.4.1
 
    >导入unitree G1机器人urdf
@@ -69,28 +69,28 @@
             enabled_self_collisions=False, solver_position_iteration_count=8, solver_velocity_iteration_count=4 #自碰撞
         ),
     ),
-   ......
    ```
----------------------------------------------------
+
    3. 刚体配置
-    >[Isaac中文教程](https://www.bilibili.com/video/BV1SK4CzHEnb?spm_id_from=333.788.videopod.sections&vd_source=527df480cd41c3e25ef0e62a90dca33a) 1.4.3
-    >> 路径：IsaacLab/scripts/demos/multi_asset.py
-    > `class MultiObjectSceneCfg(InteractiveSceneCfg`
+    > [Isaac中文教程](https://www.bilibili.com/video/BV1SK4CzHEnb?spm_id_from=333.788.videopod.sections&vd_source=527df480cd41c3e25ef0e62a90dca33a) 1.4.3
+    >>  路径：IsaacLab/scripts/demos/multi_asset.py
+    >> `class MultiObjectSceneCfg(InteractiveSceneCfg`
     >> `object: RigidObjectCfg = RigidObjectCfg`
     >> `object_collection: RigidObjectCollectionCfg = RigidObjectCollectionCfg`: 把多个东西打包ojectA，objectB....
     运行demo,终端：`python scripts/demos/multi_asset.py`
     <img width="962" height="604" alt="1 4 3" src="https://github.com/user-attachments/assets/992a2bfe-7983-4662-bc05-277bc024529f" />
----------------------------------------------------
-    4. 事件配置 EventCfg
-     >[Isaac中文教程](https://www.bilibili.com/video/BV1SK4CzHEnb?spm_id_from=333.788.videopod.sections&vd_source=527df480cd41c3e25ef0e62a90dca33a) 1.5.1
+
+---------------------------------
+  4. 事件配置 EventCfg
+     > [Isaac中文教程](https://www.bilibili.com/video/BV1SK4CzHEnb?spm_id_from=333.788.videopod.sections&vd_source=527df480cd41c3e25ef0e62a90dca33a) 1.5.1
      >>路径：/home/yons/isaac_study/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/velocity_env_cfg.py
      
-     startup 环境初始化时被使用
-     >包括：mdp.randomize_rigid_body_material， mdp.randomize_rigid_body_mass，randomize_rigid_body_com（重心）。随即训练后，可增加鲁棒性
-     reset 恢复机器人初始状态
-     >包括：apply_external_force_torque，reset_root_state_uniform恢复站立的位置/朝向，reset_joints_by_scale
-     interval 更具时间发生
-     >包括：push_by_setting_velocity interval_range_s=(10.0, 15.0),每隔10-15秒以一定速度推动机器人
+     >>startup 环境初始化时被使用
+     >>>包括：mdp.randomize_rigid_body_material， mdp.randomize_rigid_body_mass，randomize_rigid_body_com（重心）。随即训练后，可增加鲁棒性
+     >>reset 恢复机器人初始状态
+     >>>包括：apply_external_force_torque，reset_root_state_uniform恢复站立的位置/朝向，reset_joints_by_scale
+     >>interval 更具时间发生
+     >>>包括：push_by_setting_velocity interval_range_s=(10.0, 15.0),每隔10-15秒以一定速度推动机器人
      
 
     
