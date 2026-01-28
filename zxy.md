@@ -49,7 +49,7 @@
    * 或者使用Isaac sim 5.1.0 自带的转换   file-import 
    > <img width="1431" height="604" alt="截图 2026-01-28 16-06-51" src="https://github.com/user-attachments/assets/eebfcd4f-3fa8-4205-b6f5-50ab91b7db53" />
 ----------------------------------------------
-> 2. 机器人配置
+2. 机器人配置
    [Isaac中文教程](https://www.bilibili.com/video/BV1SK4CzHEnb?spm_id_from=333.788.videopod.sections&vd_source=527df480cd41c3e25ef0e62a90dca33a) 1.4.2
    > 路径：/home/yons/isaac_study/IsaacLab/source/isaaclab_assets/isaaclab_assets/robots/unitree.py
 
@@ -74,7 +74,6 @@
    ```
 ----------------------------------
 3. 刚体配置
-
    [Isaac中文教程](https://www.bilibili.com/video/BV1SK4CzHEnb?spm_id_from=333.788.videopod.sections&vd_source=527df480cd41c3e25ef0e62a90dca33a)1.4.3
    >  路径：IsaacLab/scripts/demos/multi_asset.py
     ```
@@ -86,7 +85,7 @@
     <img width="962" height="604" alt="1 4 3" src="https://github.com/user-attachments/assets/992a2bfe-7983-4662-bc05-277bc024529f" />
 
 ---------------------------------
- 4. 事件配置 EventCfg
+4. 事件配置 EventCfg
 
      [Isaac中文教程](https://www.bilibili.com/video/BV1SK4CzHEnb?spm_id_from=333.788.videopod.sections&vd_source=527df480cd41c3e25ef0e62a90dca33a) 1.5.1
      >路径：/home/yons/isaac_study/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/velocity_env_cfg.py
