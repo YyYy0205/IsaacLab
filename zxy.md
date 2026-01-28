@@ -39,18 +39,19 @@
 
 ### 1.28 
  1. 机器人模型格式
-   > [Isaac中文教程](https://www.bilibili.com/video/BV1SK4CzHEnb?spm_id_from=333.788.videopod.sections&vd_source=527df480cd41c3e25ef0e62a90dca33a) 1.4.1
+    [Isaac中文教程](https://www.bilibili.com/video/BV1SK4CzHEnb?spm_id_from=333.788.videopod.sections&vd_source=527df480cd41c3e25ef0e62a90dca33a) 1.4.1
 
-   >导入unitree G1机器人urdf
+  1.1 导入unitree G1机器人urdf
    > .[宇树机器人模型](https://github.com/unitreerobotics/unitree_ros)
     <img width="1340" height="785" alt="unitree g1urdf" src="https://github.com/user-attachments/assets/57300d88-391a-4d9f-b3f5-4c67d68369fd" />
+  1.2 urdf转换为usd
    * 命令`python scripts/tools/convert_urdf.py /home/yons/isaac_study/unitree_ros-master/robots/g1_description/g1_23dof.urdf /home/yons/isaac_study/unitree_ros-master/robots/g1_description/g1_23dof.usd`
    * 或者使用Isaac sim 5.1.0 自带的转换   file-import 
    > <img width="1431" height="604" alt="截图 2026-01-28 16-06-51" src="https://github.com/user-attachments/assets/eebfcd4f-3fa8-4205-b6f5-50ab91b7db53" />
 ----------------------------------------------
 2. 机器人配置
-   >[Isaac中文教程](https://www.bilibili.com/video/BV1SK4CzHEnb?spm_id_from=333.788.videopod.sections&vd_source=527df480cd41c3e25ef0e62a90dca33a) 1.4.2
-   >> 路径：/home/yons/isaac_study/IsaacLab/source/isaaclab_assets/isaaclab_assets/robots/unitree.py
+   [Isaac中文教程](https://www.bilibili.com/video/BV1SK4CzHEnb?spm_id_from=333.788.videopod.sections&vd_source=527df480cd41c3e25ef0e62a90dca33a) 1.4.2
+   > 路径：/home/yons/isaac_study/IsaacLab/source/isaaclab_assets/isaaclab_assets/robots/unitree.py
 
    ```
     G1_CFG = ArticulationCfg(
@@ -74,8 +75,8 @@
 ----------------------------------
 3. 刚体配置
 
-   >[Isaac中文教程](https://www.bilibili.com/video/BV1SK4CzHEnb?spm_id_from=333.788.videopod.sections&vd_source=527df480cd41c3e25ef0e62a90dca33a)1.4.3
-   >>  路径：IsaacLab/scripts/demos/multi_asset.py
+   [Isaac中文教程](https://www.bilibili.com/video/BV1SK4CzHEnb?spm_id_from=333.788.videopod.sections&vd_source=527df480cd41c3e25ef0e62a90dca33a)1.4.3
+   >  路径：IsaacLab/scripts/demos/multi_asset.py
     ```
     >> `class MultiObjectSceneCfg(InteractiveSceneCfg`
     >> `object: RigidObjectCfg = RigidObjectCfg`
@@ -87,8 +88,8 @@
 ---------------------------------
  4. 事件配置 EventCfg
 
-     > [Isaac中文教程](https://www.bilibili.com/video/BV1SK4CzHEnb?spm_id_from=333.788.videopod.sections&vd_source=527df480cd41c3e25ef0e62a90dca33a) 1.5.1
-     >>路径：/home/yons/isaac_study/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/velocity_env_cfg.py
+     [Isaac中文教程](https://www.bilibili.com/video/BV1SK4CzHEnb?spm_id_from=333.788.videopod.sections&vd_source=527df480cd41c3e25ef0e62a90dca33a) 1.5.1
+     >路径：/home/yons/isaac_study/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/manager_based/locomotion/velocity/velocity_env_cfg.py
      
      + startup 环境初始化时被使用
      >包括：mdp.randomize_rigid_body_material， mdp.randomize_rigid_body_mass，randomize_rigid_body_com（重心）。随即训练后，可增加鲁棒性
