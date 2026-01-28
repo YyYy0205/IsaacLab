@@ -8,7 +8,8 @@
 
   
   2. 训练： `scripts/reinforcement_learning/rsl_rl/train.py --task Isaac-Velocity-Rough-G1_v0 --num_envs 2000 --headless --max_iterations 1000`
- [Isaac中文教程](https://www.bilibili.com/video/BV1SK4CzHEnb?spm_id_from=333.788.videopod.sections&vd_source=527df480cd41c3e25ef0e62a90dca33a) 1.3.1/1.3.2
+
+     [Isaac中文教程](https://www.bilibili.com/video/BV1SK4CzHEnb?spm_id_from=333.788.videopod.sections&vd_source=527df480cd41c3e25ef0e62a90dca33a) 1.3.1/1.3.2
 
 ```
     * scripts/reinforcement_learning/rsl_rl/train.py
@@ -40,7 +41,8 @@
 
 ### 1.28 
 1. 机器人模型格式
-[Isaac中文教程](https://www.bilibili.com/video/BV1SK4CzHEnb?spm_id_from=333.788.videopod.sections&vd_source=527df480cd41c3e25ef0e62a90dca33a) 1.4.1
+
+   [Isaac中文教程](https://www.bilibili.com/video/BV1SK4CzHEnb?spm_id_from=333.788.videopod.sections&vd_source=527df480cd41c3e25ef0e62a90dca33a) 1.4.1
 
 * 导入unitree G1机器人urdf
    > .[宇树机器人模型](https://github.com/unitreerobotics/unitree_ros)
@@ -51,6 +53,7 @@
    > <img width="1431" height="604" alt="截图 2026-01-28 16-06-51" src="https://github.com/user-attachments/assets/eebfcd4f-3fa8-4205-b6f5-50ab91b7db53" />
 ----------------------------------------------
 2. 机器人配置
+
    [Isaac中文教程](https://www.bilibili.com/video/BV1SK4CzHEnb?spm_id_from=333.788.videopod.sections&vd_source=527df480cd41c3e25ef0e62a90dca33a) 1.4.2
    > 路径：/home/yons/isaac_study/IsaacLab/source/isaaclab_assets/isaaclab_assets/robots/unitree.py
 
@@ -75,6 +78,7 @@
    ```
 ----------------------------------
 3. 刚体配置
+
    [Isaac中文教程](https://www.bilibili.com/video/BV1SK4CzHEnb?spm_id_from=333.788.videopod.sections&vd_source=527df480cd41c3e25ef0e62a90dca33a)1.4.3
    >  路径：IsaacLab/scripts/demos/multi_asset.py
     ```
