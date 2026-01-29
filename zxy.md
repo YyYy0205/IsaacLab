@@ -1,8 +1,15 @@
 # 记录
-
+Isaac Sim 5.1.0
 
 ## 日常记录
 ### 1.27 
+  `conda activate env_isaaclab`
+  `cd isaac_study/IsaacLab`
+  * H1 人型机器人demo
+  ./isaaclab.sh -p scripts/demos/h1_locomotion.py
+
+  * 打开新的sim
+  ./isaaclab.sh -s
 
   1. `LocomotionVelocityroughEnvCfg `
 
@@ -102,5 +109,14 @@
      + interval 更具时间发生
      >包括：push_by_setting_velocity interval_range_s=(10.0, 15.0),每隔10-15秒以一定速度推动机器人
      
+### 1.29
+1. [Isacc英文教程](https://www.bilibili.com/video/BV1G8kBBvEzR?spm_id_from=333.788.videopod.episodes&vd_source=527df480cd41c3e25ef0e62a90dca33a&p=5)
+> <img width="459" height="574" alt="截图 2026-01-29 11-22-12" src="https://github.com/user-attachments/assets/b0092d02-894e-461f-ba7e-d4ec48528807" />
+
+2. 学习Isaac Lab Tutorials
+   * creat-empty.py 创造一个简单的场景
+   * launch_app.py 通过AppLauncher运行IsaacSim, 添加cube和球
+   * spawn——prims.py 如何将prim生成到场景中，创建带碰撞检测的刚体到桌子上
+
 
     
